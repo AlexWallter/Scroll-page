@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Scroll Page</title>
+</head>
+<body>
+    <header id = "Home">
+        <nav>
+            <img src="./logo.svg" alt="logo" id = "logo">
+            <div class="links">
+                <ul id = "select-link">
+                    <li>
+                        <a href="#Home" class = "scroll-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About" class = "scroll-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#Service" class = "scroll-link">Our Service</a>
+                    </li>
+                    <li>
+                        <a href="#Tours" class = "scroll-link" id = "list-end">Tours</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <button class = "icon">
+        </button>
+        <div id="header-content">
+            <h1 class="title">
+                SCROLL PROJECT
+            </h1>
+            <p>
+                Quis nemo cum et aperiam.
+                Nobis veritatis accusantium ratione eveniet similique cupiditate. <br>
+                Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <button class = "tour-button scroll-link" href="#Tours">EXPLORE TOURS</button>
+        </div>
+    </header>
+
+    <section id="About">
+        <h2>ABOUT<span> US</span></h2>
+    </section>
+    <section id="Service">
+        <h2>OUR<span> SERVICE</span></h2>
+    </section>
+    <section id="Tours">
+        <h2>FEATURED<span> TOURS</span></h2>
+    </section>
+
+    <footer><p>Copyright © Backroads Travel Tours Company <span id = "date"></span>. All Rights Reserved</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

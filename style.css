@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color1: hsl(209, 61%, 16%);
+    --font-color2: hsla(182, 63%, 54%);
+    --background-color: hsl(210, 36%, 96%);
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+footer {
+    height: 25vh;
+    text-align: center;
+    background-color: var(--font-color1);
+    color: #fff;
+    padding: 5rem;
+    letter-spacing: 0.2em;
+}
+
+.icon {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url(./hero-bcg.jpeg) center/cover no-repeat;
+    height: 100vh;
+    display: grid;
+    flex-direction: column;
+}
+
+nav {
+    display: grid;
+    position: relative;
+    transition: .4s;
+    height: fit-content;
+    width: 100vw;
+}
+
+.links {
+    display: grid;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-self: end;
+}
+
+li {
+    position: relative;
+    font-size: 1.3rem;
+    padding: 1em;
+    font-weight: bold;
+}
+
+li #list-end {
+    margin-right: 3em;
+}
+
+#logo {
+    position: absolute;
+    top: 0.6rem;
+    left: 8rem;
+    width: 4rem;
+}
+
+#header-content {
+    display: grid;
+    align-content: center;
+    justify-self: center;
+    color: #fff;
+}
+
+#header-content .title {
+    font-size: 4rem;
+}
+
+#header-content p, .title {
+    text-align: center;
+}
+
+.tour-button {
+    width: 13rem;
+    background-color: transparent;
+    border: solid #fff 2px;
+    color: #fff;
+    padding: 1em 2em;
+    letter-spacing: 0.1em;
+    justify-self: center;
+    margin-top: 2em;
+}
+
+.tour-button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--font-color2);
+}
+
+section {
+    height: 80vh;
+    text-align: center;
+}
+
+section span {
+    color: var(--font-color2);
+}
+
+section h2 {
+    color: var(--font-color1);
+}
+
+#About, #Tours {
+    background-color: var(--background-color);
+}
+
+nav.fixed {
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    box-shadow: 1px 0px 30px -9px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    transition: .4s;
+}
+
+nav.fixed a {
+    color: black;
+}
+
+@media all and (max-width: 575px) {
+    #header-content {
+        align-self: center;
+    }
+    
+    #header-content .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #header-content p {
+        text-align: center;
+        font-size: 0.9rem;
+        width: 40ch;
+    }
+
+    #logo {
+        margin:0.4em;
+        padding-bottom: 0.5em;
+        left: 3rem;
+        display: inline-block;
+        position: relative;
+    }
+
+    nav {
+        position: fixed;
+        background-color: #fff;
+        justify-content: start;
+    }
+
+    .icon {
+        width: fit-content;
+        height: fit-content;
+        background-color: transparent;
+        border: none;
+        display: inline-block;
+        justify-self: end;
+        padding: 2em;
+        cursor: pointer;
+        position: fixed;
+        z-index: 4;
+    }
+
+    .icon::before {
+        content: '\f0c9';
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        font-size: 1.6rem;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+    }
+
+    .icon.close::before {
+        content: '\f00d';
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+    }
+
+    a {
+        color: black;
+    }
+
+    ul {
+        display: grid;
+        grid-template-rows: 0px 0px 0px 0px;
+        overflow: hidden;
+        justify-content: end;
+        transition: .7s;
+    }
+
+    ul.show {
+        grid-template-rows: auto;
+        padding: 1em;
+        transition: .7s;
+    }
+}
