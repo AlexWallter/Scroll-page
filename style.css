@@ -20,7 +20,7 @@ body {
 }
 
 footer {
-    height: 25vh;
+    height: 25%;
     text-align: center;
     background-color: var(--font-color1);
     color: #fff;
@@ -161,7 +161,7 @@ nav.fixed a {
     #logo {
         margin:0.4em;
         padding-bottom: 0.5em;
-        left: 3rem;
+        left: 1.5rem;
         display: inline-block;
         position: relative;
     }
